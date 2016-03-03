@@ -7,7 +7,7 @@ This sprint we will:
 * build a form to save Albums into our database
 * add a `.post` method to our server so that it can receive the form's data
 
-> Note: as we go through this if you get stuck make use of the hints, your neighbors and the solutions.
+> Note: as we go through this if you get stuck make use of the hints, your neighbors and senior dev.
 
 > You must complete all of the previous sprint before starting this sprint. (excludes stretch challenges)
 
