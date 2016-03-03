@@ -147,7 +147,7 @@ var db = require('./models');
 
 ## Sprint 1 Conclusion
 
-**If you're stuck, take a look at the solutions branch**
+**If you're stuck, ask your senior dev for help.**
 
 If you've made it this far then we've created an API that has an index route `/api/albums`.
 Our app has a single-page view that makes an ajax GET request to the API and renders the information.  Our data is being **R**ead from the database by the server.
