@@ -18,6 +18,8 @@ Prerequisites:
 * CRUD with mongoose
   * mongoose embedded relationships
   * Part 3: mongoose references
+* Controllers using module pattern
+  * An included write-up serves to introduce this pattern.
 
 
 ## Overview
