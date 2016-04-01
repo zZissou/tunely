@@ -62,7 +62,9 @@ curl:
 
 1. Verify it's getting logged by the server when you submit.
 
-1. On the server-side break the data we're getting in the  `genre` field into an array.
+1. On the server-side break the data we're getting in the `genre` field into an array.
+
+> Hint: the `split` method may be handy here.
 
 ## Step 5:
 
@@ -87,5 +89,7 @@ curl:
 1. Change the form, replacing the textarea for genre with a field that has a button to add a new field for each genre.  See the mockup:
 
 ![add new field button](/docs/assets/images/add_new_field_button.png)
+
+<!-- note the above image works fine on github, but not in the editor -->
 
 1. Convert the form to a modal and add a link to the right-side of the "Albums" header to open it!
