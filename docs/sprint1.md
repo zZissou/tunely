@@ -86,9 +86,9 @@ To better organize this app we're going to be using controllers to separate out 
 
 1. Open server.js and create a new route for `/api/albums`.  This route's callback should point to `controllers.albums.index`.
 
-1. Open `controllers/albums.js` and fill in the index function to return all albums.
+1. Open `controllers/albumsController.js` and fill in the index function to return all albums.
 
-1. Serve the hard-coded albums in albumsController.js on `/api/albums`.  This is an API route, so let's send JSON.
+1. Serve the hard-coded albums in `albumsController.js` on `/api/albums`.  This is an API route, so let's send JSON.
 
 1. In `app.js`, use `ajax` to get the albums.  Render them on the page.
 
@@ -170,7 +170,7 @@ Now that the database is seeded, let's continue and use it in our `/api/albums` 
 
 1. Delete the hard-coded server data.
 
-1. Require `./models` in `controllers/albums.js`.
+1. Require `./models` in `controllers/albumsController.js`.
 
 1. Edit the current `function index` to access the database and pull all albums.
 
