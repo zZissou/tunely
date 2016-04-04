@@ -88,7 +88,7 @@ To better organize this app we're going to be using controllers to separate out 
 
 1. Open `controllers/albums.js` and fill in the index function to return all albums.
 
-1. Serve the hard-coded albums in albums.js on `/api/albums`.  This is an API route, so let's send JSON.
+1. Serve the hard-coded albums in albumsController.js on `/api/albums`.  This is an API route, so let's send JSON.
 
 1. In `app.js`, use `ajax` to get the albums.  Render them on the page.
 
