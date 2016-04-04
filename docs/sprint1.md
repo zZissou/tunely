@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 ## Step 1.5: rendering all the albums
 
-1. Update your code to use **all** the sampleAlbums.  Use `forEach` to loop over each album in the array and use the template to put it on the page.  
+1. Update your code to use **all** the sampleAlbums.  Create a `sampleAlbums.forEach` in your document-ready - use this to call `renderAlbum` for each album.
 
   > Note that we could use the templates `#each` method and pass it all the albums at once. However, we're planning to be able to add individual albums later on, so we'll need the ability to render each album individually.  Having two separate render functions and templates (1 for individual albums, 1 for all albums) seems excessive at this point.  
 
@@ -55,18 +55,22 @@ At this point you should see all 4 hard-coded albums rendered on page.
 ```js
 $(document).ready(function() {
   console.log('app.js loaded!');
-  renderAlbums({albums: sampleAlbums});
+  $.get('/api/albums').success(function (albums) {
+    albums.forEach(function(album) {
+      renderAlbum(album);
+    });
+  });
 });
 
 
 // this function takes a single album and renders it to the page
-function renderAlbums(albums) {
-  console.log('rendering albums');
+function renderAlbum(album) {
+  console.log('rendering album', album);
   var albumHtml = $('#album-template').html();
   var albumsTemplate = Handlebars.compile(albumHtml);
-  var html = albumsTemplate(albums);
+  var html = albumsTemplate(album);
   $('#albums').prepend(html);
- }
+}
 ```
 </details>
 
