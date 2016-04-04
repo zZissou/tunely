@@ -94,7 +94,7 @@ To better organize this app we're going to be using controllers to separate out 
 
 1. You can safely delete the hard-coded data in `app.js` now!
 
-> The data in `albums.js` and `app.js` is different; making it easy to see which data is being rendered on your page.
+> The data in `albumsController.js` and `app.js` is different; making it easy to see which data is being rendered on your page.
 
 
 ## Step 3:
