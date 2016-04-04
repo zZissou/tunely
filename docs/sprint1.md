@@ -82,7 +82,7 @@ We're going to add the following _index_ route on our server:
 GET /api/albums
 ```
 
-To better organize this app we're going to be using controllers to separate out logic for different `resources`.  That means that when you create a route like `/api/albums/:id` you'll put the server code to handle that in a separate file; and reference it's function.  [Example](controllers_example.md).  If you take a look in `server.js` you'll see that we've already required the controllers for you.
+To better organize this app we're going to be using controllers to separate out logic for different `resources`.  That means that when you create a route like `/api/albums/:id` you'll put the server code to handle that in a separate file; and reference it's function.  See also: [Big explanation about controllers and the module pattern!](controllers_example.md).  If you take a look in `server.js` you'll see that we've already required the controllers for you.
 
 1. Open server.js and create a new route for `/api/albums`.  This route's callback should point to `controllers.albums.index`.
 
