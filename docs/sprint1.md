@@ -11,7 +11,7 @@ This sprint we will:
 ## Step 0:
 
 Now would be a great time to explore the files provided for you.  In particular note:
-* the html in public/index.html
+* the html in views/index.html
 * the incomplete server in server.js
 * the included package.json
 
