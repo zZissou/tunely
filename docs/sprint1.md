@@ -44,8 +44,7 @@ $(document).ready(function() {
 
 ## Step 1.5: rendering all the albums
 
-1. Update your code to use **all** the sampleAlbums.  Use the template's `#each` method.  Change the `renderAlbum` method to a `renderAlbums` method.  This way we can call one method to re-render all the album data.
-  * Note that you'll need to pass the array of albums inside an object for the templating system to be able to use it.  That is your function call may need to look like `renderAlbums({albums: sampleAlbums});`
+1. Update your code to use **all** the sampleAlbums.  Create a `sampleAlbums.forEach` in your document-ready - use this to call `renderAlbum` for each album.
 
 
 1. Later on we'll be clearing out the `div.albums` div.  This will unfortunately also remove the script tag holding our handlebars template.  Move that script down to the bottom of the document to preserve it.
@@ -56,18 +55,22 @@ At this point you should see all 4 hard-coded albums rendered on page.
 ```js
 $(document).ready(function() {
   console.log('app.js loaded!');
-  renderAlbums({albums: sampleAlbums});
+  $.get('/api/albums').success(function (albums) {
+    albums.forEach(function(album) {
+      renderAlbum(album);
+    });
+  });
 });
 
 
 // this function takes a single album and renders it to the page
-function renderAlbums(albums) {
-  console.log('rendering albums');
+function renderAlbum(album) {
+  console.log('rendering album', album);
   var albumHtml = $('#album-template').html();
   var albumsTemplate = Handlebars.compile(albumHtml);
-  var html = albumsTemplate(albums);
+  var html = albumsTemplate(album);
   $('#albums').prepend(html);
- }
+}
 ```
 </details>
 
