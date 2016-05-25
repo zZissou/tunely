@@ -26,7 +26,7 @@ This sprint we will:
 > `git checkout -b sprint4`
 
 
-## Step 1
+## Step 1: Delete button
 
 Once again let's start on the front-end and add a button to delete an album.  
 
@@ -36,7 +36,7 @@ Once again let's start on the front-end and add a button to delete an album.
 
 1. In your `click` event determine the album-id of the current album.  Just `console.log` it for now.
 
-## Step 2
+## Step 2: Delete route
 
 Let's add a route for `DELETE /api/albums/:id` to our server.
 
@@ -49,7 +49,7 @@ Let's add a route for `DELETE /api/albums/:id` to our server.
 1. Connect it to the database and delete the specified album.
 
 
-## Step 3
+## Step 3: Connect client to server
 
 Now you can tie the previous front-end and back-end changes together.  
 
