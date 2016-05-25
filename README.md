@@ -1,9 +1,7 @@
 # WILD WILD KANYE WEST - tunely lab
 
 
-"I feel that if I had more resources,
-I could help more people. I have ideas that can make the
-human race's existence within our hundred years better." - Kanye West
+"I feel that if I had more resources, I could help more people. I have ideas that can make the human race's existence within our hundred years better." - Kanye West
 
 ![alt text](https://media.giphy.com/media/cSozWbWHEfUis/giphy.gif "Kanye")
 
