@@ -39,7 +39,7 @@ sampleAlbums.push({
 
 $(document).ready(function() {
   console.log('app.js loaded!');
-  renderAlbum(sampleAlbums[0])
+
 });
 
 
@@ -90,5 +90,5 @@ function renderAlbum(album) {
   "          <!-- end one album -->";
 
   // render to the page with jQuery
-  $('.album').append(albumHtml);
+
 }
