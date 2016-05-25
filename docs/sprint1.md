@@ -1,8 +1,13 @@
 # Sprint 1
 
+"I'll say things that are serious and put them in a joke form so people can enjoy them. We laugh to keep from crying."  - Kanye West
+
+**User Story:**
+First things first, Kanye will need to be able to see all the albums currently in his collection on the index page of the application.
+
 ## Overview
 
-This sprint we will:
+To complete this user story, on our first sprint we will:
 * focus on the **Read** part of CRUD
 * connect our _partially_ pre-built front-end to a back-end with hard-coded data.
 * replace the hard-coded data with data stored in a mongo db
@@ -162,5 +167,8 @@ If you've made it this far then we've created an API that has an index route `/a
 Our app has a single-page view that makes an ajax GET request to the API and renders the information.  Our data is being **R**ead from the database by the server.
 
 We've completed the **Read** component of our **CRUD** app for the moment.
+
+![alt text](http://cdn2.crushable.com/wp-content/uploads/2015/04/kanye.gif "Kanye")
+
 
 **Good job!**

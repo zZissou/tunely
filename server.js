@@ -16,31 +16,31 @@ app.use(express.static(__dirname + '/public'));
 var albums = [];
 albums.push({
               _id: 132,
-              artistName: 'Nine Inch Nails',
-              name: 'The Downward Spiral',
-              releaseDate: '1994, March 8',
-              genres: [ 'industrial', 'industrial metal' ]
+              artistName: 'the Old Kanye',
+              name: 'The College Dropout',
+              releaseDate: '2004, February 10',
+              genres: [ 'rap', 'hip hop' ]
             });
 albums.push({
               _id: 133,
-              artistName: 'Metallica',
-              name: 'Metallica',
-              releaseDate: '1991, August 12',
-              genres: [ 'heavy metal' ]
+              artistName: 'the New Kanye',
+              name: 'The Life of Pablo',
+              releaseDate: '2016, Febraury 14',
+              genres: [ 'hip hop' ]
             });
 albums.push({
               _id: 134,
-              artistName: 'The Prodigy',
-              name: 'Music for the Jilted Generation',
-              releaseDate: '1994, July 4',
-              genres: [ 'electronica', 'breakbeat hardcore', 'rave', 'jungle' ]
+              artistName: 'the always rude Kanye',
+              name: 'My Beautiful Dark Twisted Fantasy',
+              releaseDate: '2010, November 22',
+              genres: [ 'rap', 'hip hop' ]
             });
 albums.push({
               _id: 135,
-              artistName: 'Johnny Cash',
-              name: 'Unchained',
-              releaseDate: '1996, November 5',
-              genres: [ 'country', 'rock' ]
+              artistName: 'the sweet Kanye',
+              name: '808s & Heartbreak',
+              releaseDate: '2008, November 24',
+              genres: [ 'r&b', 'electropop', 'synthpop' ]
             });
 
 
@@ -72,6 +72,10 @@ app.get('/api', function api_index (req, res){
     ]
   });
 });
+
+app.get('/api/albums', function album_index(req, res){
+
+})
 
 /**********
  * SERVER *

@@ -1,4 +1,18 @@
-# tunely lab
+# WILD WILD KANYE WEST - tunely lab
+
+
+"I feel that if I had more resources,
+I could help more people. I have ideas that can make the
+human race's existence within our hundred years better." - Kanye West
+
+![alt text](https://media.giphy.com/media/cSozWbWHEfUis/giphy.gif "Kanye")
+
+
+Kanye has ideas, but he needs more resources!! That's where you come in. We all know people only use 20% of their brain, but kanye uses 100%.
+He needs the space in his brain that he’s currently using to remember the worlds greatest album collection (kanye’s own collection) so he can solve cancer. or something.
+Kanye needs a single page web app to list all of the albums in his collection and a way to add more when he drops new ones.
+If you accomplish this task, I'm told he will "love you like Kanye loves Kanye"... which as we know... is a lot.
+
 
 Full CRUD SPA with mongoose and Express.
 

@@ -1,10 +1,17 @@
 # Sprint 3
 
+"My music isn’t just music — it’s medicine." - Kanye West
+
+**User Stories:**
+- Kanye would like to be able to see all the tracks on his carefully curated albums on the same page as his albums.
+- Kanye's albums are works of art that are never finished. Kanye wants to be able to add songs to an album.
+
 ## Overview
 
-This sprint we will:
+To complete this user story on this sprint we will:
 * add an embedded Song model to our Album model
 * change the UI to allow users to see songs in the embedded model
+* add the funcitonality to create new songs
 
 
 > Note: as we go through this if you get stuck make use of the hints, your neighbors and the solutions.
@@ -16,18 +23,18 @@ In this step we'll be changing our Album schema to have an embedded schema that 
 The data from the database will look a little like this:
 
 ```js
-{ genres: [ 'new wave', 'indie rock', 'synth pop' ],
+{ genres: [ 'rap', 'hip hop' ],
     songs:
      [ { _id: 5665ff1678209c64e51b4e6a,
          trackNumber: 1,
-         name: 'Swamped' },
+         name: 'Famous' },
        { _id: 5665ff1678209c64e51b4e64,
          trackNumber: 7,
-         name: 'Tight Rope' } ],
+         name: 'All of the Lights' } ],
     _id: 5665ff1678209c64e51b4e63,
-    releaseDate: '2008, November 18',
-    name: 'Comalies',
-    artistName: 'Lacuna Coil',
+    releaseDate: '2004, February 10',
+    name: 'The College Dropout',
+    artistName: 'the Old Kanye',
     __v: 0 },
 ```
 
@@ -54,7 +61,7 @@ The data from the database will look a little like this:
 ## Step 2: Seeding
 
 Let's add seeds.  Some basic data is [provided for you](/docs/code_samples/sprint3_song_seeds.js).
-We're going to use this data for all albums for now, even though it's not accurate.
+We're going to use the same song data for all albums for now, even though it's not accurate.
 
 1. Copy the sample songs into `seed.js`
 
@@ -74,7 +81,7 @@ For now we're just going to make this super simple and output something like:
 ```html
 <li class="list-group-item">
   <h4 class="inline-header">Songs:</h4>
-  <span>	– (1) Swamped – (2) Heaven's a Lie – (3) Daylight Dancer – (4) Humane – (5) Self Deception – (6) Aeon – (7) Tight Rope – </span>
+  <span>	– (1) Famous – (2) All of the Lights – (3) Guilt Trip – (4) Paranoid – (5) Ultralight Beam – (6) Runaway – (7) Stronger – </span>
 </li>
 ```
 
@@ -255,4 +262,4 @@ POST /api/albums/:id/songs
 
 You should also have a working app!  Congratulations!
 
-![](http://i.giphy.com/wue4QtxncWuE8.gif)
+![](https://media.giphy.com/media/8tNeta02m7oUE/giphy.gif)

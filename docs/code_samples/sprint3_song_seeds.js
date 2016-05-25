@@ -9,24 +9,24 @@ var SongSchema = new Schema({
 
 var sampleSongs = [];
 
-sampleSongs.push({ name: 'Swamped',
+sampleSongs.push({ name: 'Famous',
                    trackNumber: 1
 });
-sampleSongs.push({ name: "Heaven's a Lie",
+sampleSongs.push({ name: "All of the Lights",
                    trackNumber: 2
 });
-sampleSongs.push({ name: 'Daylight Dancer',
+sampleSongs.push({ name: 'Guilt Trip',
                    trackNumber: 3
 });
-sampleSongs.push({ name: 'Humane',
+sampleSongs.push({ name: 'Paranoid',
                    trackNumber: 4
 });
-sampleSongs.push({ name: 'Self Deception',
+sampleSongs.push({ name: 'Ultralight Beam',
                    trackNumber: 5
 });
-sampleSongs.push({ name: 'Aeon',
+sampleSongs.push({ name: 'Runaway',
                    trackNumber: 6
 });
-sampleSongs.push({ name: 'Tight Rope',
+sampleSongs.push({ name: 'Stronger',
                    trackNumber: 7
 });

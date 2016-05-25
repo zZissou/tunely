@@ -1,8 +1,14 @@
 # Sprint 2
 
+"My greatest pain in life is that I will never be able to see myself perform live." - Kanye West
+
+**User Story:**
+Now, Kayne is always working on new stuff. He's going to need to be able to add more albums to his collection.
+
+
 ## Overview
 
-This sprint we will:
+To complete this user story we will:
 * focus on the **Create** part of CRUD
 * build a form to save Albums into our database
 * add a `.post` method to our server so that it can receive the form's data
@@ -102,7 +108,7 @@ curl:
 
 1. TEST ALL THE THINGS
 
-![Test all the things](http://www.daedtech.com/wp-content/uploads/2012/12/TestAllTheThings-300x225.jpg)
+![Test all the things](http://images.thehollywoodgossip.com/iu/s--7R0gPFdv--/t_slideshow/f_auto,fl_lossy,q_75/v1403556930/kanye-west-im-the-best.gif)
 
 ## Stretch Challenges
 
