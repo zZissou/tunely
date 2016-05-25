@@ -108,7 +108,7 @@ curl:
 
 1. TEST ALL THE THINGS
 
-![Test all the things](http://images.thehollywoodgossip.com/iu/s--7R0gPFdv--/t_slideshow/f_auto,fl_lossy,q_75/v1403556930/kanye-west-im-the-best.gif)
+![Test all the things](http://www.xclusivetouch.co.uk/wp-content/uploads/2014/03/kanye-west-yeezy-but-im-the-best-gif.gif)
 
 ## Stretch Challenges
 
