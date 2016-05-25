@@ -65,15 +65,15 @@ function renderAlbum(album) {
   "                    <ul class='list-group'>" +
   "                      <li class='list-group-item'>" +
   "                        <h4 class='inline-header'>Album Name:</h4>" +
-  "                        <span class='album-name'>" + album.Name + "</span>" +
+  "                        <span class='album-name'>" + "HARDCODED ALBUM NAME" + "</span>" +
   "                      </li>" +
   "                      <li class='list-group-item'>" +
   "                        <h4 class='inline-header'>Artist Name:</h4>" +
-  "                        <span class='artist-name'>" +  album.artistName + "</span>" +
+  "                        <span class='artist-name'>" +  "HARDCODED ARTIST NAME"+ "</span>" +
   "                      </li>" +
   "                      <li class='list-group-item'>" +
   "                        <h4 class='inline-header'>Released date:</h4>" +
-  "                        <span class='album-releaseDate'>" + album.releaseDate + "</span>" +
+  "                        <span class='album-releaseDate'>" + "HARDCODED ALBUM RELEASE DATE" + "</span>" +
   "                      </li>" +
   "                    </ul>" +
   "                  </div>" +
