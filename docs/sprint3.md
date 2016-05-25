@@ -181,7 +181,7 @@ $('#songModal').data('album-id', currentAlbumId);
 
 > Suggested reading: [See the bootstrap docs](http://getbootstrap.com/javascript/#modals-usage)
 
-## Step 5:
+## Step 5: Async POST request
 
 So we should now have a working modal, but it doesn't do anything yet.
 Let's add a function to handle the submit on the modal and POST the form data as a new song.
@@ -206,7 +206,7 @@ function handleNewSongSubmit(e) {
 
 > Hint: The modal doesn't actually have a form.  Use .val to get the data from the input fields and construct an object for your POST data.
 
-## Step 6:
+## Step 6: Handle the POST
 
 Now we need to add the POST route on the server.  We're going to be using request-params (URL parameters) this time.  
 
@@ -218,7 +218,7 @@ Now we need to add the POST route on the server.  We're going to be using reques
 
 > Hint: when connecting to the database make sure that Song has been exported in `models/index.js`
 
-## Step 7:
+## Step 7: Maintain state
 
 Display the created song on the page.
 
