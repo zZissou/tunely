@@ -1,3 +1,5 @@
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60">
+
 # WILD WILD KANYE WEST - tunely lab
 
 
@@ -12,7 +14,7 @@ Kanye needs a single page web app to list all of the albums in his collection an
 If you accomplish this task, I'm told he will "love you like Kanye loves Kanye"... which as we know... is a lot.
 
 
-Full CRUD SPA with mongoose and Express.
+Full stack JavaScript Application.
 
 Prerequisites:
 * jQuery, AJAX

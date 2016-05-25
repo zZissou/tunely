@@ -1,8 +1,13 @@
 # Sprint 6
 
+"Would you believe in what you believe in if you were the only one who believed it?" - Kanye West
+
+**User Story:**
+Now let's find a way to let Kanye update the Songs.
+
 ## Overview
 
-Now let's allow our users to update Songs.  We're going to create a new modal to do this.
+ We're going to create a new modal to do this.
 That means, now might be a good time to take a look at the [bootstrap modal documentation](http://getbootstrap.com/javascript/#modals).
 
 We'll create another modal in `index.html`.  Each time someone clicks a button to edit songs we'll populate it with the current songs' information.  This won't be too hard since we're just going to replace the modal body. (on the sample: `#editSongsModalBody`)
@@ -18,7 +23,7 @@ Objectives:
 * allow songs to be deleted
 * practice more with bootstrap modal's
 
-## Step 1: modalize
+## Step 1: Modalize
 
 1. Add a new modal to the page.  You can build your own OR [use the sample provided](/docs/code_samples/sprint6_modal.html).
 
@@ -34,7 +39,7 @@ Objectives:
 
 </details>
 
-## Step 2: form
+## Step 2: Form
 
 1. Develop a form for editing the song list.  It should be able to (1) delete a song (2) edit each song. Your form will need to be put into an HTML string (write a function for this).
 
@@ -44,7 +49,7 @@ Objectives:
 
 > A sample HTML string for the form <a href="/docs/code_samples/sprint6_inline_form.js">is provided for you</a>.
 
-## Step 3
+## Step 3: Delete
 
 1. Create the server-side routes for `DELETE /api/albums/:album_id/songs/:id` and `PUT /api/albums/:album_id/songs/:id`.
 
@@ -59,7 +64,7 @@ Objectives:
 > You may want to re-retrieve the songs rather than trying to parse the current album `<li>` content.
 > It would be a good idea to make a function for this, it'll be useful in the next step.
 
-## Step 4 Update  
+## Step 4: Update  
 
 Let's allow users to save their edits.
 
@@ -72,7 +77,7 @@ Let's allow users to save their edits.
 1. Make sure the modal closes when the close button is clicked.
 
 
-## Step 5
+## Step 5: Maintain State
 
 1. Add functionality so that the user can create new songs and have them added to the list from within the modal.
 
