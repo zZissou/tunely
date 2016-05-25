@@ -17,7 +17,7 @@ Now would be a great time to explore the files provided for you.  In particular 
 
 ### Working through the lab
 
-Use nodemon throughout the exercise to run your server. Don't forget to run npm install after your forked and cloned this repo.
+Use nodemon throughout the exercise to run your server. Don't forget to run npm install after your forked and cloned this repo if you do not see the node_modules folder.
 Continually verify that your browser console is displaying the `app.js loaded!` message on document-ready.
 
 ## Step 1:
@@ -27,7 +27,7 @@ Let's start on the outside and work our way in.
 1. Open `index.html` and find the HTML for an **album**. Delete the hardcoded HTML for all of the albums. Leave the outer `div.albums` in place.
 
 1. Open `app.js` and edit the function `renderAlbum` to display one Album on the page.
-You should use the albumHTML which is just like what you just deleted as the template for the album info.  Build-up the HTML string and use jQuery to render it on the page.
+You should use the `albumHTML` which is just like what you just deleted in `index.html` as the template for the album info.  Build-up the HTML string and use jQuery to render it on the page.
 
 1. Run the function on document-ready and give it `sampleAlbums[0]` (just one album).  Verify that the page looks right.
 
@@ -52,9 +52,9 @@ We're going to add the following _index_ route on our server:
 GET /api/albums
 ```
 
-1. Open server.js and create a new route for `/api/albums`
+1. Open `server.js` and create a new route for `/api/albums`
 
-1. Serve the hard-coded albums in the server.js file on `/api/albums`.  This is an API route, so let's send JSON.
+1. Serve the hard-coded albums in the `server.js` file on `/api/albums`.  This is an API route, so let's send JSON.
 
 1. In `app.js`, use `ajax` to hit that route you just built and get the albums as a JSON object from your server file.  Render them on the page.
 
@@ -144,6 +144,7 @@ Now that the database is seeded, let's continue and use it in our `/api/albums` 
 var db = require('./models');
 ```
 </details>
+
 <details><summary>hint: accessing Album info from db</summary>
 
 ```js

@@ -81,11 +81,11 @@ curl:
 
 ## Step 4:
 
-1. In the client-side JS, setup your form handler to make an AJAX post with the data.
+1. In the client-side JS, setup your form handler to make an AJAX POST request with the data.
 
 1. Verify it's getting logged by the server when you submit. Check that the information from the form is being sent in the `req.body`.
 
-1. On the server-side split up the data we're getting in the `genre` field into an array.
+1. On the server-side split up the data we're getting in the `req.body.genre` field into an array.
 
 
 ## Step 5:
@@ -98,7 +98,7 @@ curl:
 
 ## Step 6:
 
-1. When your server returns JSON, display it on the page.  We already have a function to render it!
+1. When your server returns JSON, append the new album to the page.  We already have a function to render it!
 
 1. TEST ALL THE THINGS
 

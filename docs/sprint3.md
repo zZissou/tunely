@@ -64,11 +64,11 @@ We're going to use this data for all albums for now, even though it's not accura
 
 1. Fix any issues you encounter, until you can see that it's also adding songs for each album.
 
-## Step 3: display
+## Step 3: Display
 
 Let's go back to `app.js` and our html.  If you check the output of your AJAX call, you should see that we're already retrieving songs with each album.  Double-check this before you proceed.  
 
-We'll change the client to add another `<li>` after the ones that are already being generated for each album.  We'll list our songs in there.
+We'll change the client to add another `<li>` for all the songs on the album after the `<li>`'s already being generated for each album for artist name, etc.
 For now we're just going to make this super simple and output something like:
 
 ```html
@@ -104,7 +104,7 @@ function buildSongsHtml(songs) {
 ```
 </details>
 
-1. Now call `buildSongsHtml` from inside `renderAlbum`. Use it to add the 4th `<li>` to each album.
+1. Now call `buildSongsHtml` from inside `renderAlbum` and pass in the songs array from the album. Use it to add the 4th `<li>` to each album.
 
 
 ## Step 4: Create Songs
