@@ -3,7 +3,7 @@
 ## Overview
 
 This sprint we will:
-* focus on **Create**
+* focus on the **Create** part of CRUD
 * build a form to save Albums into our database
 * add a `.post` method to our server so that it can receive the form's data
 
@@ -15,7 +15,7 @@ This sprint we will:
 
 1. Open `views/index.html`
 
-1. Edit the file adding a new container and row after the jumbotron.
+1. Edit the file adding a new `section.container` and `div.row` after the jumbotron for the form.
 
 1. Use bootstrap to create a form to input your Album info.  Follow the fields we've already used in our database.
 
@@ -24,7 +24,7 @@ This sprint we will:
 
 ## Step 2:
 
-1. Edit your `app.js`. Use jQuery to capture the form values and serialize them.  `console.log` the output.
+1. Edit your `app.js`. Use jQuery to capture the form values when the form is submitted and serialize them.  `console.log` the output.
 
 sample serialized form data:
 
@@ -32,7 +32,20 @@ sample serialized form data:
 name=Marble+House&textinput=The+Knife&releaseDate=2006&genres=electronica%2C+synth+pop%2C+trip+hop
 ```
 
-1. Clear the form after getting the data.
+2. Clear the form after getting the data.
+
+<details><summary>hint: serializing form data</summary>
+
+```js
+var formdata = $(this).serialize();
+```
+</details>
+<details><summary>hint: clearing the form info</summary>
+
+```js
+$(this).trigger("reset");
+```
+</details>
 
 ## Step 3:
 
@@ -42,15 +55,25 @@ Let's add a post route on the server now.  We already know that POST is used to 
 POST  /api/albums
 ```
 
-1. In `server.js`, after the current `GET /api/albums` add a new route.  Start by just `console.log`ing the output and returning the same data you received as json.
+1. In `server.js`, after the current `GET /api/albums` add a new route for POST.  Start by just `console.log`ing the output and returning the same data you received as json.
 
-1. Add body-parser to the server.
+1. Add body-parser to the server. Make sure you `npm install --save body-parser`. Check to see if it's in `package.json` and then also require it in your `server.js` file.
 
 1. You can test this by either using AJAX from your browser's javascript console, or by using curl or postman.
 
+<details><summary>hint: requiring/using body-parser in server.js</summary>
+
+```js
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+```
+</details>
+
+
+
 curl:
 ```bash
- curl -X POST http://localhost:3000/api/albums --data "name=Marble+House&textinput=The+Knife&releaseDate=2006&genres=electronica%2C+synth+pop%2C+trip+hop
+ curl -X POST http://localhost:3000/api/albums --data "name=Marble+House&textinput=The+Knife&releaseDate=2006&genres=electronica%2C+synth+pop%2C+trip+hop"
 ```
 
 > Hint: If using postman to POST set the BODY type to x-www-form-urlencoded, then set key-value pairs.
@@ -60,13 +83,14 @@ curl:
 
 1. In the client-side JS, setup your form handler to make an AJAX post with the data.
 
-1. Verify it's getting logged by the server when you submit.
+1. Verify it's getting logged by the server when you submit. Check that the information from the form is being sent in the `req.body`.
 
-1. On the server-side break the data we're getting in the  `genre` field into an array.
+1. On the server-side split up the data we're getting in the `genre` field into an array.
+
 
 ## Step 5:
 
-1. Connect the POST route to the database.  Make sure you're returning the new album.
+1. Connect the POST route to the database. Use mongoose method to create a new album and save it to the database. Make sure you're returning the new album.
 
 1. Test it!
 
