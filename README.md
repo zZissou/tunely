@@ -5,7 +5,7 @@
 
 "I feel that if I had more resources, I could help more people. I have ideas that can make the human race's existence within our hundred years better." - Kanye West
 
-![alt text](https://media.giphy.com/media/cSozWbWHEfUis/giphy.gif "Kanye")
+![alt text](https://media.giphy.com/media/3oEjHIxD6j01Q8ZWbm/giphy.gif "Kanye")
 
 
 Kanye has ideas, but he needs more resources!! That's where you come in. We all know people only use 20% of their brain, but kanye uses 100%.
