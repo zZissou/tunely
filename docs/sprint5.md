@@ -12,7 +12,7 @@ This sprint we will:
 
 > You must complete all of the previous sprint before starting this sprint. (excludes stretch challenges)
 
-## Step 1
+## Step 1: Edit button
 
 We're going to add a button that allows our users to edit an album.
 
@@ -30,14 +30,14 @@ We're going to add a button that allows our users to edit an album.
 
 > Hint: you could have 2 buttons in place already, 1) "Edit", 2) "Save changes" and simply toggle their visibility with [$.toggle](http://api.jquery.com/toggle/)
 
-## Step 2
+## Step 2: Send the request
 
 1. When `Save Changes` is clicked, react to it.  
 
 1. Prepare an AJAX call to the server at `PUT /api/albums/:id`.
 
 
-## Step 3
+## Step 3: Handle the request
 
 1. Add the `app.put` method on the server.  
 
