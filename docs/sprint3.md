@@ -215,7 +215,7 @@ Now we need to add the POST route on the server.  We're going to be using reques
 
 ## Step 7: Display the created song on the page.
 
-1. Add a `GET /api/albums/:albumId` route (show method), it should respond with the requested album including it's songs.  Depending on your choice below, you may or may not need this right away.
+1. Add a `GET /api/albums/:albumId` route (show method), it should respond with the requested album including its songs.  Depending on your choice below, you may or may not need this right away.
 
 	> You can easily test this route by finding a valid ID and then using postman, curl or your browser console with code like: `$.get('/api/albums/56fdd7b7febebdd208a38934').success(function(data) { console.log(data) });`
 
@@ -233,7 +233,7 @@ To get back and display the created song on the page, you have a couple of optio
 * You could have your `POST /api/albums/:albumId/songs` route return the entire album instead of just the song.  Then: 
 	* Re-render the album on the page.
 
-> This has the advantage of reducing the number of requests from client to server.  But **usually** a POST response contains just the created record (not it's parent).
+> This has the advantage of reducing the number of requests from client to server.  But **usually** a POST response contains just the created record (not its parent).
 
 	
 #### Regardless, close the modal afterward.
