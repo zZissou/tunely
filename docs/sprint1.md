@@ -11,7 +11,7 @@ This sprint we will:
 ## Step 0:
 
 Now would be a great time to explore the files provided for you.  In particular note:
-* the html in public/index.html
+* the html in views/index.html
 * the incomplete server in server.js
 * the included package.json
 
@@ -82,19 +82,19 @@ We're going to add the following _index_ route on our server:
 GET /api/albums
 ```
 
-To better organize this app we're going to be using controllers to separate out logic for different `resources`.  That means that when you create a route like `/api/albums/:id` you'll put the server code to handle that in a separate file; and reference it's function.  [Example](controllers_example.md).  If you take a look in `server.js` you'll see that we've already required the controllers for you.
+To better organize this app we're going to be using controllers to separate out logic for different `resources`.  That means that when you create a route like `/api/albums/:id` you'll put the server code to handle that in a separate file; and reference it's function.  See also: [Big explanation about controllers and the module pattern!](controllers_example.md).  If you take a look in `server.js` you'll see that we've already required the controllers for you.
 
 1. Open server.js and create a new route for `/api/albums`.  This route's callback should point to `controllers.albums.index`.
 
-1. Open `controllers/albums.js` and fill in the index function to return all albums.
+1. Open `controllers/albumsController.js` and fill in the index function to return all albums.
 
-1. Serve the hard-coded albums in albums.js on `/api/albums`.  This is an API route, so let's send JSON.
+1. Serve the hard-coded albums in `albumsController.js` on `/api/albums`.  This is an API route, so let's send JSON.
 
 1. In `app.js`, use `ajax` to get the albums.  Render them on the page.
 
 1. You can safely delete the hard-coded data in `app.js` now!
 
-> The data in `albums.js` and `app.js` is different; making it easy to see which data is being rendered on your page.
+> The data in `albumsController.js` and `app.js` is different; making it easy to see which data is being rendered on your page.
 
 
 ## Step 3:
@@ -170,7 +170,7 @@ Now that the database is seeded, let's continue and use it in our `/api/albums` 
 
 1. Delete the hard-coded server data.
 
-1. Require `./models` in `controllers/albums.js`.
+1. Require `./models` in `controllers/albumsController.js`.
 
 1. Edit the current `function index` to access the database and pull all albums.
 
