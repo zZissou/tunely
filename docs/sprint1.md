@@ -141,7 +141,7 @@ module.exports.Album = require("./album.js");
 
 Let's try seeding our database.
 
-1. Move the hard-coded model data from `server.js` into `seed.js`.  You'll note there's already an empty variable there for you to use.  
+1. Move the hard-coded model data from `controllers/albumControllers.js` into `seed.js`.  You'll note there's already an empty variable there for you to use.  
 
 1. Strip out the pre-coded `_id` properties, mongo will take of creating these for us.
 
