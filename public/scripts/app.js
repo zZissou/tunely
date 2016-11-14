@@ -39,7 +39,20 @@ sampleAlbums.push({
 
 $(document).ready(function() {
   console.log('app.js loaded!');
+  $.get('/api/albums').success(function (albums) {
+    albums.forEach(function(album) {
+      renderAlbum(album);
+    });
+  });
 });
+
+function renderAlbum(album) {
+  console.log('rendering album', album);
+  var albumHtml = $('#albumInformation').html();
+  var template = Handlebars.compile(albumHtml);
+  var albumHtml = template({sampleAlbums});
+  $('#albums').append(albumHtml);
+}
 
 
 
