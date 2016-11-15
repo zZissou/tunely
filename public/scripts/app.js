@@ -8,11 +8,31 @@ $(document).ready(function() {
     success: handleGetAlbumSuccess,
     error: handleGetAlbumError
   })
+
+  $('#albumForm').on('submit', function(event) {
+    event.preventDefault();
+
+    var formData = $(this).serialize();
+    console.log(formData);
+
+    $.ajax({
+      method: 'POST',
+      url: '/api/albums',
+      type: 'json',
+      success: handlePostAlbumSuccess,
+      error: handlePostAlbumError,
+    })
+  });
 });
 
-
+// function handlePostAlbumSuccess(data) {
+//   console.log("got it")
+// }
+// function handlePostAlbumError(data) {
+//   console.log("don't have it")
+// }
 function handleGetAlbumSuccess(data) {
-  var receivedAlbums = data.albums;
+  var receivedAlbums = data;
   receivedAlbums.forEach(function renderOneAlbum(album) {
     renderAlbum(album);
   });
