@@ -30,9 +30,3 @@ function renderAlbum(album) {
   var albumHtml = template(album);
   $('#albums').prepend(albumHtml);
 }
-
-
-
-
-
-// this function takes a single album and renders it to the page
